@@ -1,4 +1,5 @@
 import { Container, Text, VStack, Box, Flex, Spacer, Heading } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -7,7 +8,8 @@ const Index = () => {
         <Heading size="md">Blank Canvas App</Heading>
         <Spacer />
         <Box>
-          <Text>Home</Text>
+          <Link to="/">Home</Link>
+          <Link to="/events" style={{ marginLeft: '1rem' }}>Events</Link>
         </Box>
       </Flex>
       <Container centerContent maxW="container.md" height="80vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
